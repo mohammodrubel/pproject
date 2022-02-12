@@ -1,0 +1,20 @@
+.createBlog{
+    background:linear-gradient(rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.897)) ,url(../img/fardintazbeed\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.form-control,.textarea.form-control{
+    background-color: transparent!important;
+}
+.form-control:hover{
+    background-color: transparent!important;
+}
+.form-control:focus{
+    background-color: transparent!important;
+}
+.form-control{
+    color: white!important;
+}
+.form-control:active{
+    color: black!important;
+}

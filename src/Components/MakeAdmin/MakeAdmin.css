@@ -1,0 +1,15 @@
+.custom,.textarea.custom{
+    background-color: transparent!important;
+}
+.custom:hover{
+    background-color: transparent!important;
+}
+.custom:focus{
+    background-color: transparent!important;
+}
+.custom{
+    color: black!important;
+}
+.custom:active{
+    color: black!important;
+}

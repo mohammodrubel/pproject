@@ -1,0 +1,16 @@
+.customInput{
+    color: black!important;
+}
+.contactUsMsg{
+    background-color: #010323;
+    color: white;
+    padding: 5px;
+    font-weight: 600;  
+    transition: .3s;  
+}
+.contactUsMsg:hover{
+    background-color: white;
+    border: 2px solid #010323;
+    color: #010323;
+    font-weight: 700;
+}
