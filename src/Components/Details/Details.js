@@ -18,7 +18,7 @@ const Details = () => {
     // console.log(imgUrl)
     
     useEffect(()=>{
-        fetch('http://localhost:5000/blogs')
+        fetch('https://mysterious-mountain-50221.herokuapp.com/blogs')
         .then(res => res.json())
         .then(data => setOntimeData(data.getBlog.find((p)=> p._id ===  detail)))
     },[])

@@ -16,7 +16,7 @@ const CreateBlog = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/blogs',data)
+        axios.post('https://mysterious-mountain-50221.herokuapp.com/blogs',data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Congress! new blog update')

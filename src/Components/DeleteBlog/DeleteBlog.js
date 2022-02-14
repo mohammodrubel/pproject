@@ -5,7 +5,7 @@ const DeleteBlog = () => {
     const [deletesBlog,setDeleteBlog] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/blogs')
+        fetch('https://mysterious-mountain-50221.herokuapp.com/blogs')
         .then(Response => Response.json())
         .then(data => setDeleteBlog(data.getBlog))
     },[])
@@ -14,7 +14,7 @@ const DeleteBlog = () => {
     const handleDeleteComments = id =>{
         const confirm = window.confirm('are you sure ? you want to delete this comment? ')
         if(confirm){
-            const url = `http://localhost:5000/blogs/${id}`
+            const url = `https://mysterious-mountain-50221.herokuapp.com/blogs/${id}`
         fetch(url,{
             method:'DELETE'
         })

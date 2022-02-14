@@ -11,7 +11,7 @@ const ContactUs = () => {
     const {user} = useAuth()
     const { register, handleSubmit,reset, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/contactUs',data)
+        axios.post('https://mysterious-mountain-50221.herokuapp.com/contactUs',data)
         .then(res => {
             if(res.data.insertedId){
                 alert('massage send Confirm!')

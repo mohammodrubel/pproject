@@ -21,7 +21,7 @@ const Comments = () => {
     const {user,googleSingin,handleFacebook,} = useAuth()
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/comments',data)
+        axios.post('https://mysterious-mountain-50221.herokuapp.com/comments',data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Submit Confirm! ')
@@ -34,7 +34,7 @@ const Comments = () => {
     }
 
     useEffect(()=>{
-        fetch('http://localhost:5000/comments')
+        fetch('https://mysterious-mountain-50221.herokuapp.com/comments')
         .then(Response => Response.json())
         .then(data =>  setComments(data.filter((p)=> p.BlogId == detail)))
     },[])
@@ -47,7 +47,7 @@ const Comments = () => {
     const handleDeleteComments = id =>{
         const confirm = window.confirm('are you sure ? you want to delete this comment? ')
         if(confirm){
-            const url = `http://localhost:5000/comments/${id}`
+            const url = `https://mysterious-mountain-50221.herokuapp.com/comments/${id}`
         fetch(url,{
             method:'DELETE'
         })

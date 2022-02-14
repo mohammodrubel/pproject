@@ -8,7 +8,7 @@ const Information = () => {
     const [informations,setInformation] = useState([])
 
         useEffect(()=>{
-            fetch('http://localhost:5000/contactUs')
+            fetch('https://mysterious-mountain-50221.herokuapp.com/contactUs')
             .then(Response => Response.json())
             .then(data => setInformation(data))
         },[])
@@ -16,7 +16,7 @@ const Information = () => {
 const handleInformation = id =>{
     const confirm = window.confirm('are you sure ? you want to delete this comment? ')
     if(confirm){
-        const url = `http://localhost:5000/contactUs/${id}`
+        const url = `https://mysterious-mountain-50221.herokuapp.com/contactUs/${id}`
     fetch(url,{
         method:'DELETE'
     })

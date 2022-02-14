@@ -13,7 +13,7 @@ const Blog = () => {
     const [page,setPage] = useState(0)
     const size = 12
     useEffect(()=>{
-        fetch(`http://localhost:5000/blogs?page=${page}&&size=${size}`)
+        fetch(`https://mysterious-mountain-50221.herokuapp.com/blogs?page=${page}&&size=${size}`)
         .then(Response => Response.json())
         // .then(data => setBlog(data))
         .then(data => {

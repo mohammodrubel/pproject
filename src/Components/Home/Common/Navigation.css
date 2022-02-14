@@ -12,3 +12,9 @@
         opacity: 1;
     }
 }
+
+.navbar-light .navbar-toggler {
+    color: white!important;
+    border-color: white!important;
+}
+
